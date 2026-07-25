@@ -1,3 +1,8 @@
+import Swiper from 'swiper';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const scrollRevealSelectors = [
   '.section-header-title',
   '.section-header-text',
@@ -6,7 +11,9 @@ const scrollRevealSelectors = [
   '.lesson-card',
   '.proposal-card-wrap',
   '.teacher-card',
-  '.reviews-item',
+  '.reviews-title',
+  '.reviews-description',
+  '.reviews-swiper',
   '.contact-us-title',
   '.contact-us-text',
   '.contact-us-promo',
@@ -22,6 +29,31 @@ scrollRevealSelectors.forEach(selector => {
 ScrollOut({
   once: true,
 });
+
+const reviewsSwiperElement = document.querySelector('.reviews-swiper');
+
+if (reviewsSwiperElement) {
+  new Swiper(reviewsSwiperElement, {
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 16,
+    speed: 500,
+    pagination: {
+      el: '.reviews-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+    },
+  });
+}
 
 // Attention shake: a CTA shakes once it has been on screen for 2.5s.
 const initButtonShake = () => {
