@@ -1,8 +1,3 @@
-import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 const scrollRevealSelectors = [
   '.section-header-title',
   '.section-header-text',
@@ -11,9 +6,7 @@ const scrollRevealSelectors = [
   '.lesson-card',
   '.proposal-card-wrap',
   '.teacher-card',
-  '.reviews-title',
-  '.reviews-description',
-  '.reviews-swiper',
+  '.reviews-item',
   '.contact-us-title',
   '.contact-us-text',
   '.contact-us-promo',
