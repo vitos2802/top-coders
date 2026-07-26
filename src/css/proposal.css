@@ -256,7 +256,6 @@
 
   .proposal-list {
     max-width: 654px;
-    margin-bottom: 39px;
   }
 
   .proposal-item {
@@ -265,13 +264,13 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: -0.02em;
+    letter-spacing: -2%;
   }
 
   .proposal-btn {
     min-width: 165px;
-    padding: 16px 64px;
-    font-size: 18px;
+    padding: 12px 18px;
+    font-size: 13px;
   }
 
   .proposal-books {

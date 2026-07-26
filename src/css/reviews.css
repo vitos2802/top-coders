@@ -44,7 +44,6 @@
   line-height: 1.71;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--color-muted);
 }
 
 .reviews-list {
@@ -56,8 +55,8 @@
   min-width: 0;
 }
 
-.reviews-swiper {
-  overflow: hidden;
+.reviews-item:nth-child(n + 2) {
+  display: none;
 }
 
 .review-card {
@@ -66,14 +65,6 @@
   padding: 20px 20px 40px;
   border-radius: var(--radius-card);
   background-color: var(--color-gray);
-}
-
-.reviews-swiper .swiper-wrapper {
-  align-items: stretch;
-}
-
-.reviews-swiper .swiper-slide {
-  height: auto;
 }
 
 .review-student {
@@ -113,8 +104,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  overflow-wrap: anywhere;
-  color: var(--color-muted);
 }
 
 @media only screen and (min-width: 768px) {
